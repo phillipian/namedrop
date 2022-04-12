@@ -20,7 +20,7 @@ class App extends Component {
       "Judy Blume, Amy Poehler, and Kate DiCamillo wrote the forewords for new editions of my books that were published in 2016, in celebration of my hundredth birthday.",
       "One of my best-known characters, a daughter of Robert and Dorothy Quimby, began as a minor character in my Henry Huggins series.",
     ];
-    console.log(this.clues);
+    // console.log(this.clues);
     this.index = 0;
     this.state = {
       message: this.clues[this.index],
