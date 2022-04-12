@@ -1,13 +1,140 @@
+
+html { overflow: hidden; }
+
 body {
+  font-family: "EB Garamond", "Garamond", "Times New Roman", serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen';*/
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.banner {
+  background-color: black;
+  margin: -5px;
+  padding: -5px;
+  height: 3rem;
+  padding: 0.8rem 0.5rem 0.5rem 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* display: inline-grid; */
+  /* display: inline; */
+}
+a {
+  padding: 0;
+  margin: 0;
+}
+
+.plip-font {
+  font-family: "Times New Roman", "EB Garamond", "Garamond", "Times New Roman", serif;
+  font-style: italic;
+  content: url("../public/nameplate.png"); 
+  filter: invert(100%); 
+  height: 2rem;
+  padding: 0.9rem 0.5rem 0.5rem 0;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+  /* color: invert() */
+  /* height: 100%; */
+}
+.heading{
+  position: relative;
+}
+
+.body-text{
+  display: flex;
+  position: absolute;
+  height: 80%;
+  width: 100%;
+}
+
+
+
+.next {
+  height: 100%;
+  margin: 20px 0;
+  border: 0;
+  float: right;
+  font-size: 2rem;
+  padding: 0 10px;
+  /* position: absolute; */
+}
+.next:hover {
+  cursor: pointer;
+  background-color: #e0e6ed;
+}
+
+h1 {
+  font-family: "EB Garamond", 'SF Display Pro', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  /* margin: 20px; */
+  display: inline;
+  color: white;
+}
+
+.plip {
+  float: left;
+  color: white;
+  display: inline;
+}
+
+.guesstext {
+  font-family: "EB Garamond", "Garamond", "Times New Roman", serif;
+  text-decoration: italic;
+  font-size: 3rem;
+  position: relative;
+  float: center;
+  text-align: center;
+  align-items: center;
+  padding: 10% 10%;
+  width: 100%;
+  /* height: 50vh; */
+  /* overflow: hidden; */
+  color: black;
+}
+
+.bottom {
+  display: flex;
+  bottom: 0px;
+  position: absolute;
+  width:100%;
+}
+
+.bottom p { 
+  padding: 2rem 1rem 0 2rem;
+}
+
+form {
+  position: relative;
+  bottom: 0px;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-family: "Aeonik Pro", "EB Garamond", "Garamond", "Times New Roman", serif;
+}
+
+.input {
+  /* position: absolute; */
+  /* font-family: "Aeonik Pro", "EB Garamond", "Garamond", "Times New Roman", serif; */
+   margin: 5px 5px;
+   height: 2rem;
+   width: 20%;
+}
+
+.submitButton {
+  margin: 5px 5px;
+  font-family: "Aeonik Pro", "EB Garamond", "Garamond", "Times New Roman", serif;
+  font-size: 1rem;
+  padding: 5px;
+  border: 0;
+}
+.submitButton:hover {
+  cursor: pointer;
+  background-color: #273444;
+  color: #e0e6ed;
 }
