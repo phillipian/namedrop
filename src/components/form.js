@@ -16,11 +16,11 @@ class NameForm extends Component {
   
 	handleSubmit(event) {
 		this.state.value = this.state.value.toLowerCase();
-		if (this.state.value == this.props.name) {
+		if (this.state.value == this.props.name.toLowerCase()) {
 			alert("You guessed correctly! Your score is: " + (this.props.score+1) + "!");
-			
+
 		} else {
-			alert("Try Again...");
+			alert("Try Again... Hint: you need the full name, and check your spelling!");
 		}
 	//   alert('A name was submitted: ' + this.state.value);
 	  event.preventDefault();

@@ -63,7 +63,7 @@ class App extends Component {
         </div>
         {/* <input>Answer</input> */}
         <div className="bottom">
-        <NameForm name="claire wang" score={this.index} />
+        <NameForm name="Beverly Cleary" score={this.index} />
         </div>
       </div>
     );
