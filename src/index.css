@@ -7,6 +7,56 @@ body {
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen';*/
 }
 
+.introScreen {
+  /* overflow:visible; */
+  /* overflow:scroll; */
+	height: 80vh;
+	/* width: 100vh; */
+  margin: 5rem;
+	background-color: white;
+  color: black;
+	text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.introScreen > h2 {
+  font-size: 3rem;
+  font-style: italic;
+  font-family: "EB Garamond", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: black;
+  margin-bottom: 0;
+}
+.introScreen > h1 {
+  font-size: 5rem;
+  /* font-style: italic; */
+  font-family: "EB Garamond", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: black;
+}
+.introScreen > p {
+  margin: auto 5rem 2rem 5rem;
+  /* width: 50%; */
+  font-size: 2rem;
+  /* max-width: 10rem; */
+  align-items: center;
+}
+
+.playQuizButton {
+  border-radius: 5px;
+  font-size: 1.5rem;
+  border: 0;
+  padding: 1rem;
+  background-color: black;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+  color: white;
+}
+.playQuizButton:hover {
+  -o-transition-duration: 800ms;
+  transition-duration: 800ms;
+  color: black;
+  background-color: #e0e6ed;
+}
+
 .banner {
   background-color: black;
   margin: -5px;

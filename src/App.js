@@ -1,5 +1,6 @@
 import React, { useState, Component } from "react";
 import NameForm from "./components/form";
+import Intro from "./components/intro";
 import "./App.css";
 import "./index.css";
 
@@ -11,7 +12,9 @@ class App extends Component {
   //   "clue4",
   //   "clue5"
   // ]
+  
   constructor(props) {
+    // const [showResults, setShowResults] = React.useState(false)
     super(props);
     this.clues = [
       "In my memoir “A Girl from Yamhill,” I recall discovering my love of reading when, bored on a rainy day, I picked up “The Dutch Twins,” by Lucy Fitch Perkins.",
@@ -25,6 +28,7 @@ class App extends Component {
     this.state = {
       message: this.clues[this.index],
     };
+    this.intro = React.createRef();
   }
   nextClue = () => {
     if (this.index == 4) {
@@ -42,16 +46,23 @@ class App extends Component {
     this.index = this.index - 1;
     this.setState({ message: this.clues[this.index] });
   };
+  // playQuiz = () => {
+  // 	// const preview = this.intro;
+  //   setShowResults(true)
+
+  // }
 
   render() {
     return (
       <div className="container">
+        <Intro />
         <div className="banner">
           <h1 className="heading">Andover Namedrop w/ the</h1>
           <a src="https://phillipian.net"><span className="plip-font"></span></a>
 
           {/* <h1 className="plip">Phillipian</h1> */}
         </div>
+        
         <div className="body-text">
           <button className="next" onClick={this.prevClue}>
             ←
